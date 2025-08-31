@@ -10,10 +10,10 @@ The system performs **comprehensive security scanning, SSL certificate grading, 
 ## 📸 Screenshots  
 
 ### 🔹 Dashboard View  
-![Dashboard](Images/Screenshot%20v1.png)  
+![Dashboard](Screenshot%20v1.png)  
 
 ### 🔹 Community Platform  
-![Community](Images/Screenshot%20v2.png)
+![Community](Screenshot%20v2.png)
 ---
 
 ## 🛠 Steps Performed  
