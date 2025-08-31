@@ -98,6 +98,7 @@ text
 https://google.com - Low risk, A grade
 https://github.com - Established domain
 https://httpstat.us/200 - Various test cases
+
 🔧 API Endpoints
 POST /api/scan/
 Scan a website for security analysis
