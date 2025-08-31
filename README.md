@@ -1,95 +1,110 @@
-🔍 Vigilante Scanner - Advanced Website Security Scanner
-<p align="center"> <img src="https://img.icons8.com/clouds/200/000000/security-checked.png" alt="Security Shield" width="150"> </p><p align="center"> <b>Advanced Website Security Scanner & Community Scam Awareness Hub</b> </p><p align="center"> <img src="https://img.shields.io/badge/Real-time%20Scanning-✓-success?style=flat&logo=clock&logoColor=white" alt="Real-time Scanning"> <img src="https://img.shields.io/badge/SSL%20Analysis-✓-success?style=flat&logo=lock&logoColor=white" alt="SSL Analysis"> <img src="https://img.shields.io/badge/Risk%20Assessment-✓-success?style=flat&logo=warning&logoColor=white" alt="Risk Assessment"> <img src="https://img.shields.io/badge/Community%20Platform-✓-success?style=flat&logo=people&logoColor=white" alt="Community Platform"> </p><p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=22C55E&center=true&vCenter=true&width=435&lines=Protecting+the+digital+world;One+scan+at+a+time;Community-powered+security" alt="Typing SVG"> </p>
-📋 Overview
-Vigilante Scanner is a comprehensive full-stack web application for real-time website security analysis, SSL certificate grading, domain risk assessment, and community scam awareness. It combines advanced security scanning technology with a platform for users to share scam experiences and protect others.
+# 🔍 Vigilante Scanner - Advanced Website Security Scanner  
 
-🎯 Community Highlight: This project includes a community-driven platform where users can share their scam experiences and help others avoid similar threats, creating a safer online environment for everyone.
+## 📌 Project Overview  
+This project analyzes **website security vulnerabilities** using a **full-stack web application**.  
+The system performs **comprehensive security scanning, SSL certificate grading, and domain risk assessment**, while also providing a **community platform for scam awareness and protection**.  
 
-🖼️ Application Preview
-<div align="center"> <img src="Screenshot%20v1.png" alt="Vigilante Scanner Dashboard" width="45%" style="border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); margin: 10px;"> <img src="Screenshot%20v2.png" alt="Vigilante Scanner Results" width="45%" style="border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); margin: 10px;"> <br> <em>Dashboard view showing the security scanning interface | Scan results showing security analysis and risk assessment</em> </div>
-✨ Key Features
-<table> <tr> <td width="50%" align="center"> <img src="https://img.icons8.com/dusk/64/000000/ssl.png" alt="SSL Icon" width="40"> <h3>SSL Certificate Analysis</h3> <p>Comprehensive TLS/SSL grading system (A+, A, B, C, F) with detailed certificate validation</p> </td> <td width="50%" align="center"> <img src="https://img.icons8.com/dusk/64/000000/calendar.png" alt="Calendar Icon" width="40"> <h3>Domain Age Detection</h3> <p>WHOIS-based domain registration history analysis to identify newly created suspicious domains</p> </td> </tr> <tr> <td width="50%" align="center"> <img src="https://img.icons8.com/dusk/64/000000/medium-risk.png" alt="Risk Icon" width="40"> <h3>Risk Assessment</h3> <p>Intelligent 1-100 risk scoring system that evaluates multiple security factors</p> </td> <td width="50%" align="center"> <img src="https://img.icons8.com/dusk/64/000000/lightning-bolt.png" alt="Lightning Icon" width="40"> <h3>Real-time Scanning</h3> <p>Instant security analysis of any website with detailed results in seconds</p> </td> </tr> <tr> <td width="50%" align="center"> <img src="https://img.icons8.com/dusk/64/000000/database.png" alt="Database Icon" width="40"> <h3>Database Storage</h3> <p>Permanent storage of scan history for trend analysis and historical reference</p> </td> <td width="50%" align="center"> <img src="https://img.icons8.com/dusk/64/000000/conference.png" alt="Community Icon" width="40"> <h3>Scam Awareness Platform</h3> <p>Community-driven platform where users share scam stories to protect others</p> </td> </tr> </table>
-🛠️ Technology Stack
-<div align="center">
-🐍 Backend
-<img src="https://img.icons8.com/color/48/000000/django.png" alt="Django" title="Django"> <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" title="Python"> <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL" title="PostgreSQL"> <img src="https://img.icons8.com/color/48/000000/api.png" alt="API" title="Django REST Framework">
-⚛️ Frontend
-<img src="https://img.icons8.com/color/48/000000/nextjs.png" alt="Next.js" title="Next.js"> <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript" title="TypeScript"> <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind CSS" title="Tailwind CSS"> <img src="https://img.icons8.com/color/48/000000/react.png" alt="React" title="React"></div>
-🚀 Installation & Setup
-Prerequisites
-<img src="https://img.icons8.com/color/24/000000/python.png" alt="Python" width="18"> Python 3.8 or higher
+---
+---
 
-<img src="https://img.icons8.com/color/24/000000/nodejs.png" alt="Node.js" width="18"> Node.js 16 or higher
+## 📸 Screenshots  
 
-<img src="https://img.icons8.com/color/24/000000/postgreesql.png" alt="PostgreSQL" width="18"> PostgreSQL (optional - SQLite works for development)
+### 🔹 Dashboard View  
+![Dashboard](Images/Screenshot%20v1.png)  
 
-Frontend Setup (Public Access)
-bash
-# Navigate to frontend directory
+### 🔹 Community Platform  
+![Community](Images/Screenshot%20v2.png)
+---
+
+## 🛠 Steps Performed  
+
+### 1. Frontend Development  
+- Built responsive UI with **Next.js 15+** and **TypeScript**  
+- Implemented real-time security dashboard  
+- Created community scam awareness platform  
+- Designed modern interface with **Tailwind CSS**  
+
+### 2. Backend Development  
+- Developed **Django REST API** for security scanning  
+- Implemented **SSL/TLS certificate analysis and validation**  
+- Integrated **WHOIS domain registration lookup system**  
+- Created database models for scan history and user reports  
+
+### 3. Security Features Implemented  
+- Real-time website security scanning engine  
+- SSL certificate grading system (**A+, A, B, C, F**)  
+- Domain age detection and risk assessment algorithms  
+- Comprehensive security reporting system  
+
+### 4. Community Platform Development  
+- User authentication and profile management  
+- Scam story sharing and moderation system  
+- Community rating and feedback features  
+- Awareness dashboard with recent scam alerts  
+
+---
+
+## 🛠️ Technology Stack Used  
+- **Frontend Framework** → Next.js 15+ with TypeScript  
+- **Backend Framework** → Django 4.2+ with REST API  
+- **Styling** → Tailwind CSS for modern UI  
+- **Database** → PostgreSQL (SQLite for development)  
+- **Security Analysis** → SSL/TLS validation, WHOIS integration  
+- **Deployment** → Responsive design, cross-browser compatibility  
+
+---
+
+## 🎯 Key Features Delivered  
+- **Real-time Security Scanning** – Instant website vulnerability assessment  
+- **SSL Certificate Analysis** – Comprehensive TLS/SSL grading system  
+- **Risk Assessment Scoring** – Intelligent 1-100 risk evaluation  
+- **Domain Age Detection** – WHOIS-based registration history analysis  
+- **Community Platform** – Scam awareness sharing and protection  
+- **Historical Data Storage** – Permanent scan history storage  
+- **Interactive Dashboard** – User-friendly security interface  
+
+---
+
+## 🚀 Installation & Implementation  
+
+### ✅ Prerequisites Required  
+- Python **3.8 or higher**  
+- Node.js **16 or higher**  
+- PostgreSQL (**SQLite works for development**)  
+
+---
+
+### 🔧 Frontend Implementation  
+
 cd frontend/vigilante-scanner
 
-# Install dependencies
-npm install
+Frontend runs at: http://localhost:3000
+---
 
-# Start development server
-npm run dev
-🌐 Frontend will run at: http://localhost:3000
-
-Backend Setup
-bash
-# Navigate to backend directory
-cd backend
-
-# Create virtual environment
+##⚙️ Backend Implementation
+  cd backend
 python -m venv venv
-
-# Activate virtual environment
-# On Windows: venv\Scripts\activate
-source venv/bin/activate
-
-# Install dependencies
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
-# Run migrations
 python manage.py migrate
-
-# Start development server
 python manage.py runserver
-🔧 Backend will run at: http://localhost:8000
 
-🎯 Usage
-Start the frontend server (port 3000) and open your browser to http://localhost:3000
+Backend runs at: http://localhost:8000
+----
 
-Enter a website URL in the scanner input field to view comprehensive security analysis including:
+📊 API Endpoints Developed
+🔹 POST /api/scan/
 
-🎯 Risk Level (1-100 scale)
+Website security analysis endpoint
 
-🔒 SSL Certificate Grade
 
-📅 Domain Age information
-
-🛡️ Security recommendations
-
-Test URLs to Try:
-🌐 https://google.com - Low risk, A grade
-
-💻 https://github.com - Established domain
-
-🧪 https://httpstat.us/200 - Various test cases
-
-🔌 API Endpoints
-POST /api/scan/
-Scan a website for security analysis
-
-Request:
-
-json
 {
   "url": "https://example.com"
 }
+
 Response:
 
-json
+
 {
   "riskLevel": 35,
   "riskCategory": "medium",
@@ -99,24 +114,42 @@ json
   "scanId": 42,
   "message": "Scan completed successfully"
 }
+
+## 📁 Project Structure
+
+frontend/   → Next.js frontend application
+backend/    → Django backend API
+images/     → Screenshots and application assets
+README.md   → Comprehensive project documentation
+LICENSE     → MIT License file
+
+📜 License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
+
 🔒 Backend Security Notice
 The backend administration and database management systems are private and secured. Public access is limited to the API endpoints required for the scanning functionality only.
 
 Access Restrictions:
 
-🚫 Django admin panel: Private access only
+Django admin panel: Private access only
+Database management: Admin access only
+API endpoints: Limited to scanning functionality
+Authentication: Protected admin routes
+Server configuration: Secured deployment
 
-🗄️ Database management: Admin access only
+## ✅ Conclusion
 
-🔌 API endpoints: Limited to scanning functionality
+Vigilante Scanner provides a powerful and user-friendly platform for analyzing website security, grading SSL certificates, and detecting domain-related risks.
+By combining real-time scanning, risk assessment, and a community-driven awareness system, it not only enhances individual website safety but also helps in building collective protection against scams and cyber threats.
 
-🔐 Authentication: Protected admin routes
+This project can be extended further by:
 
-🛡️ Server configuration: Secured deployment
+Adding AI-powered phishing detection
 
-The public-facing application provides a secure and controlled interface while maintaining the privacy and security of the backend infrastructure.
+Integrating automated malware scanning
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Enhancing community-driven scam reporting with trust scores
 
-<p align="center"> <strong>Vigilante Scanner Project</strong> © 2023 | Created for a safer internet experience </p><p align="center"> <img src="https://img.icons8.com/fluency/48/000000/info.png" alt="Info" width="20"> <em>Note: This project is for educational and security research purposes only. Always ensure you have permission to scan websites and comply with all applicable laws and terms of service.</em> </p><div align="center">
+Together, we can make the web a safer place for everyone. 🌐🔐
