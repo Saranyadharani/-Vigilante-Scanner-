@@ -11,8 +11,8 @@ Vigilante Scanner is a comprehensive full-stack web application for real-time we
 
 > **Community Highlight:** This project includes a community-driven platform where users can share their scam experiences and help others avoid similar threats, creating a safer online environment for everyone.
 
-![Dashboard View](Images/Screenshot%20v1.png)
-![Community Page](Images/Screenshot%20v2.png)
+![Dashboard View](Screenshot%20v1.png)
+![Community Page](Screenshot%20v2.png)
 
 *The interface shows the security analysis dashboard, SSL certificate grading, risk assessment, and community scam awareness sections.*
 
