@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
+from django.contrib.auth import get_user_model
 import os
 import sys
 
@@ -28,9 +29,31 @@ def test_db(request):
     
     return JsonResponse(result)
 
+def create_superuser(request):
+    """Create superuser endpoint"""
+    User = get_user_model()
+    
+    username = 'saran'
+    password = 'Saranya@0602'
+    email = 'saran@example.com'
+    
+    try:
+        if not User.objects.filter(username=username).exists():
+            User.objects.create_superuser(
+                username=username,
+                email=email,
+                password=password
+            )
+            return HttpResponse("✅ Superuser 'saran' created successfully! You can now login at /admin")
+        else:
+            return HttpResponse("✅ Superuser 'saran' already exists! You can login at /admin")
+    except Exception as e:
+        return HttpResponse(f"❌ Error creating superuser: {e}")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/', include('authentication.urls')),
     path('api/scan/', include('scanner.urls')),
-    path('test-db/', test_db),  # Add this line
+    path('test-db/', test_db),
+    path('create-superuser/', create_superuser),  # Add this line
 ]
