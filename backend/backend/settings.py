@@ -17,7 +17,8 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '.vercel.app',
-    'your-backend.vercel.app',  # Replace with your actual backend URL
+    'vigilante-scanner.onrender.com',  # Your Render URL
+    '.onrender.com',  # Allow all Render subdomains
 ]
 
 # Application definition
