@@ -13,12 +13,13 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', get_random_secret_key())
 # Set DEBUG=True locally, False in production
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
+# ALLOWED_HOSTS - Updated for Render
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '.vercel.app',
-    'vigilante-scanner.onrender.com',  # Your Render URL
-    '.onrender.com',  # Allow all Render subdomains
+    'vigilante-scanner.onrender.com',
+    '.onrender.com',
 ]
 
 # Application definition
@@ -31,7 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'rest_framework_simplejwt',  # Add this for JWT
+    'rest_framework_simplejwt',
     'authentication',
     'auth_app',
     'scanner',
@@ -69,25 +70,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-# Database Configuration
-# Only import dj_database_url when needed (for production)
-if os.environ.get('DATABASE_URL'):
-    import dj_database_url
-    DATABASES = {
-        'default': dj_database_url.config(
-            default=os.environ['DATABASE_URL'],
-            conn_max_age=600,
-            ssl_require=True
-        )
-    }
-else:
-    # Local development with SQLite
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+# Database Configuration - Hardcoded for Render PostgreSQL
+import dj_database_url
+DATABASES = {
+    'default': dj_database_url.config(
+        default='postgresql://vigilante_db_kkv6_user:Ay0KDnnoBYIoy4KSEJwJX60vuNhThDeU@dpg-d70n4hua2pns73b90970-a/vigilante_db_kkv6',
+        conn_max_age=600,
+        ssl_require=True
+    )
+}
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -131,6 +122,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://127.0.0.1:3001",
     "https://villigante-scanner.vercel.app",
+    "https://vigilante-scanner.onrender.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -139,6 +131,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://127.0.0.1:3001",
     "https://villigante-scanner.vercel.app",
+    "https://vigilante-scanner.onrender.com",
 ]
 
 # Allow credentials for CORS
@@ -154,7 +147,7 @@ REST_FRAMEWORK = {
     ],
 }
 
-# JWT Settings (Optional but recommended)
+# JWT Settings
 from datetime import timedelta
 
 SIMPLE_JWT = {
@@ -180,3 +173,21 @@ SIMPLE_JWT = {
     
     'JTI_CLAIM': 'jti',
 }
+
+# Auto-create superuser on deploy
+import sys
+try:
+    from django.contrib.auth import get_user_model
+    User = get_user_model()
+    
+    username = 'saran'
+    password = 'Saranya@0602'
+    email = 'saran@example.com'
+    
+    if not User.objects.filter(username=username).exists():
+        User.objects.create_superuser(username=username, email=email, password=password)
+        print(f"✅ Superuser '{username}' created successfully!")
+    else:
+        print(f"✅ Superuser '{username}' already exists.")
+except Exception as e:
+    print(f"Error creating superuser: {e}", file=sys.stderr)
