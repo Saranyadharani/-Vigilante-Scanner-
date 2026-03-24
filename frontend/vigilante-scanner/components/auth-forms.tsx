@@ -59,7 +59,7 @@ export function AuthForms() {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div suppressHydrationWarning className="w-full max-w-md mx-auto">
       <Tabs defaultValue="login" className="w-full">
         <TabsList className="grid w-full grid-cols-2 glass-strong bg-card/50">
           <TabsTrigger value="login">Login</TabsTrigger>
@@ -79,6 +79,7 @@ export function AuthForms() {
                   onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
                   required
                   className="glass-subtle bg-background/50"
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -92,6 +93,7 @@ export function AuthForms() {
                   onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
                   required
                   className="glass-subtle bg-background/50"
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -115,6 +117,7 @@ export function AuthForms() {
                   onChange={(e) => setSignUpData({ ...signUpData, username: e.target.value })}
                   required
                   className="glass-subtle bg-background/50"
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -128,6 +131,7 @@ export function AuthForms() {
                   onChange={(e) => setSignUpData({ ...signUpData, email: e.target.value })}
                   required
                   className="glass-subtle bg-background/50"
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -141,6 +145,7 @@ export function AuthForms() {
                   onChange={(e) => setSignUpData({ ...signUpData, password: e.target.value })}
                   required
                   className="glass-subtle bg-background/50"
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -154,6 +159,7 @@ export function AuthForms() {
                   onChange={(e) => setSignUpData({ ...signUpData, confirmPassword: e.target.value })}
                   required
                   className="glass-subtle bg-background/50"
+                  suppressHydrationWarning
                 />
               </div>
 
