@@ -30,13 +30,13 @@ export default function UrlScanner() {
     setResult(null);
 
     try {
-      const response = await fetch(`${config.API_BASE_URL}/scan/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ url: url }),
-      });
+      const response = await fetch('https://vigilante-scanner.onrender.com/api/scan/', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ url: url }),
+});
 
       const data = await response.json();
 
