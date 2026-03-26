@@ -28,7 +28,7 @@ export function ScamStoriesFeed() {
   const fetchStories = async () => {
     try {
       const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://vigilante-scanner.onrender.com/api/scan/';
-      const response = await fetch(`${API_URL}community-stories/`)
+      const response = await fetch(`${API_URL}stories/`)
       const data = await response.json()
       
       if (response.ok) {
