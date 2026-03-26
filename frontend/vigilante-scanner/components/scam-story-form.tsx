@@ -24,20 +24,21 @@ export function ScamStoryForm() {
     setMessage("")
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/scan/submit-story/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: formData.title,
-          story: formData.story,
-          website: formData.websiteOrPhone,
-          scam_type: 'Other Scam Type',
-          author_name: 'Anonymous User'
-        }),
-      })
-
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://vigilante-scanner.onrender.com/api/scan/';
+const response = await fetch(`${API_URL}submit-story/`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  credentials: 'include',  // Add this line
+  body: JSON.stringify({
+    title: formData.title,
+    story: formData.story,
+    website: formData.websiteOrPhone,
+    scam_type: 'Other Scam Type',
+    author_name: 'Anonymous User'
+  }),
+})
       const result = await response.json()
 
       if (response.ok) {
