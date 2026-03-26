@@ -17,9 +17,8 @@ ALLOWED_HOSTS = [
     '.vercel.app',
     'vigilante-scanner.onrender.com',
     '.onrender.com',
-    'vigilante-scanner.vercel.app',
+    'viligante-scanner.vercel.app',  # Add this with correct spelling
 ]
-
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -112,14 +111,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
+# CORS settings - Use the correct spelling!
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:3001",
-    "https://vigilante-scanner.vercel.app",
-    "https://villigante-scanner.vercel.app",
-    "https://*.vercel.app",
+    "https://viligante-scanner.vercel.app",  # Correct spelling: viligante
+    "https://viligante-scanner-rdfpk6v4d-saranyadharani84-3817s-projects.vercel.app",  # Preview URL
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -127,11 +126,9 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3001",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:3001",
-    "https://vigilante-scanner.vercel.app",
-    "https://villigante-scanner.vercel.app",
-    "https://*.vercel.app",
+    "https://viligante-scanner.vercel.app",
+    "https://viligante-scanner-rdfpk6v4d-saranyadharani84-3817s-projects.vercel.app",
 ]
-
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
     'accept',
