@@ -25,7 +25,7 @@ export default function DashboardPage() {
     setError(null)
 
     try {
-      const API_URL = 'http://127.0.0.1:8000/api/scan/';
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://vigilante-scanner.onrender.com/api/scan/';
       const response = await fetch(`${API_URL}`, {
         method: 'POST',
         headers: {
