@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 import dj_database_url
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://vigilante_db_kkv6_user:Ay0KDnnoBYIoy4KSEJwJX60vuNhThDeU@dpg-d70n4hua2pns73b90970-a/vigilante_db_kkv6',
+        default='postgresql://neondb_owner:npg_QkDS3xI0bidT@ep-blue-poetry-aor94onn.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require',
         conn_max_age=600,
         ssl_require=True
     )
