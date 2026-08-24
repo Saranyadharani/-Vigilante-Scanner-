@@ -5,8 +5,6 @@ Link: https://viligante-scanner.vercel.app/
 ## Project Overview  
 This project analyzes **website security vulnerabilities** using a **full-stack web application**.  
 The system performs **comprehensive security scanning, SSL certificate grading, and domain risk assessment**, while also providing a **community platform for scam awareness and protection**.  
-
----
 ---
 
 ##  Screenshots  
