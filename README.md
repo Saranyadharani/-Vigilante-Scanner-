@@ -1,13 +1,15 @@
-#  Vigilante Scanner - Advanced Website Security Scanner - Link: https://viligante-scanner.vercel.app/
+#  Vigilante Scanner - Advanced Website Security Scanner
 
-## 📌 Project Overview  
+Link: https://viligante-scanner.vercel.app/
+
+## Project Overview  
 This project analyzes **website security vulnerabilities** using a **full-stack web application**.  
 The system performs **comprehensive security scanning, SSL certificate grading, and domain risk assessment**, while also providing a **community platform for scam awareness and protection**.  
 
 ---
 ---
 
-## 📸 Screenshots  
+##  Screenshots  
 
 ### 🔹 Dashboard View  
 ![Dashboard](Screenshot%20v1.png)  
@@ -16,7 +18,7 @@ The system performs **comprehensive security scanning, SSL certificate grading, 
 ![Community](Screenshot%20v2.png)
 ---
 
-## 🛠 Steps Performed  
+## Steps Performed  
 
 ### 1. Frontend Development  
 - Built responsive UI with **Next.js 15+** and **TypeScript**  
@@ -54,7 +56,7 @@ The system performs **comprehensive security scanning, SSL certificate grading, 
 
 ---
 
-## 🎯 Key Features Delivered  
+##  Key Features Delivered  
 - **Real-time Security Scanning** – Instant website vulnerability assessment  
 - **SSL Certificate Analysis** – Comprehensive TLS/SSL grading system  
 - **Risk Assessment Scoring** – Intelligent 1-100 risk evaluation  
@@ -64,92 +66,13 @@ The system performs **comprehensive security scanning, SSL certificate grading, 
 - **Interactive Dashboard** – User-friendly security interface  
 
 ---
-
-## 🚀 Installation & Implementation  
-
-### ✅ Prerequisites Required  
-- Python **3.8 or higher**  
-- Node.js **16 or higher**  
-- PostgreSQL (**SQLite works for development**)  
-
----
-
-### 🔧 Frontend Implementation  
-
-cd frontend/vigilante-scanner
-
-Frontend runs at: http://localhost:3000
----
-
-##⚙️ Backend Implementation
-  cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-
-Backend runs at: http://localhost:8000
-----
-
-📊 API Endpoints Developed
-🔹 POST /api/scan/
-
-Website security analysis endpoint
-
-
-{
-  "url": "https://example.com"
-}
-
-Response:
-
-
-{
-  "riskLevel": 35,
-  "riskCategory": "medium",
-  "sslGrade": "A",
-  "domainAge": 5,
-  "domain": "example.com",
-  "scanId": 42,
-  "message": "Scan completed successfully"
-}
-
-## 📁 Project Structure
-
-frontend/   → Next.js frontend application
-backend/    → Django backend API
-images/     → Screenshots and application assets
-README.md   → Comprehensive project documentation
-LICENSE     → MIT License file
-
-📜 License
-
+License
 This project is licensed under the MIT License – see the LICENSE
  file for details.
 
-🔒 Backend Security Notice
-The backend administration and database management systems are private and secured. Public access is limited to the API endpoints required for the scanning functionality only.
-
-Access Restrictions:
-
-Django admin panel: Private access only
-Database management: Admin access only
-API endpoints: Limited to scanning functionality
-Authentication: Protected admin routes
-Server configuration: Secured deployment
-
-## ✅ Conclusion
+## Conclusion
 
 Vigilante Scanner provides a powerful and user-friendly platform for analyzing website security, grading SSL certificates, and detecting domain-related risks.
 By combining real-time scanning, risk assessment, and a community-driven awareness system, it not only enhances individual website safety but also helps in building collective protection against scams and cyber threats.
 
-This project can be extended further by:
 
-Adding AI-powered phishing detection
-
-Integrating automated malware scanning
-
-Enhancing community-driven scam reporting with trust scores
-
-Together, we can make the web a safer place for everyone. 🌐🔐
